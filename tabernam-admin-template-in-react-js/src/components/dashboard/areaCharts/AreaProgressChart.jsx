@@ -7,9 +7,9 @@ function App() {
   const [chartData, setChartData] = useState({
     datasets: [{
       data: [10, 20, 30],
-      backgroundColor: ['red', 'blue', 'yellow'],
+      backgroundColor: ['green', 'lightgreen', 'darkgreen'],
     }],
-    labels: ['Red', 'Yellow', 'Blue'],
+    labels: ['green', 'lightgreen', 'darkgreen'],
   });
 
   useEffect(() => {
@@ -17,6 +17,7 @@ function App() {
       fetch('http://localhost:3001/api/pie-chart')  
         .then((response) => response.json())
         .then((data) => {
+          console.log(data);
           const labels = [];
           const values = [];
 
@@ -28,7 +29,7 @@ function App() {
           setChartData({
             datasets: [{
               data: values,
-              backgroundColor: ['red', 'blue', 'yellow'],
+              backgroundColor: ['green', 'light green', 'red','yellow','white','blue'],
             }],
             labels: labels,
           });
