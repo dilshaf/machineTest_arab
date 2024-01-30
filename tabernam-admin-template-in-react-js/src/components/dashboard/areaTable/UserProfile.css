@@ -1,0 +1,33 @@
+.profile-parent{
+    /* border: 1px solid white; */
+    width: 80%;
+    border: none;
+    /* border-radius: 2px; */
+    
+}
+#parent-profile{
+
+    display: flex;
+    flex-direction: column;
+}
+.items-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+.items-list{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 10rem;
+}
+.social-icons{
+    display: flex;
+    gap: 20px
+}
